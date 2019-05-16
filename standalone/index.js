@@ -1,5 +1,5 @@
-const WordFilter = require("./WordFilter.js");
-const Styles = require("./Styles.js");
+const WordFilter = require('./WordFilter.js');
+const Styles = require('./Styles.js');
 
 StylesTool = Styles();
 
@@ -8,9 +8,7 @@ StylesTool = Styles();
     must include Styles de/serializers
 */
 const editor = {
-  settings: {
-    paste_retain_style_properties: "all",
-  },
+  settings: {},
   dom: {
     parseStyle: StylesTool.parse,
     serializeStyle: StylesTool.serialize,
@@ -21,9 +19,8 @@ const editor = {
     also mock the param function required by editor
 */
 editor.getParam = function(key, defaultValue) {
-  console.log(key);
   const value = key in editor.settings ? editor.settings[key] : defaultValue;
-  console.log(value);
+
   return value;
 };
 
