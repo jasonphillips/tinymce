@@ -17,6 +17,12 @@
   },
   "main": "standalone/index.js",
   "dependencies": {
+  },
+  "devDependencies": {
+    "@ephox/agar": "latest",
+    "@ephox/bedrock": "latest",
+    "@ephox/mcagar": "latest",
+    "@ephox/swag": "latest",
     "@ephox/alloy": "latest",
     "@ephox/boulder": "latest",
     "@ephox/darwin": "latest",
@@ -24,13 +30,7 @@
     "@ephox/sand": "latest",
     "@ephox/snooker": "latest",
     "@ephox/sugar": "latest",
-    "@ephox/imagetools": "latest"
-  },
-  "devDependencies": {
-    "@ephox/agar": "latest",
-    "@ephox/bedrock": "latest",
-    "@ephox/mcagar": "latest",
-    "@ephox/swag": "latest",
+    "@ephox/imagetools": "latest",
     "awesome-typescript-loader": "^3.4.1",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "~1.1.0",
